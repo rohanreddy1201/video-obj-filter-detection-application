@@ -1,24 +1,4 @@
-# Navigate to your project directory
-cd C:\Users\ishan\source\repos\filter_application
-
-# Remove the existing .git directory to start fresh
-Remove-Item -Recurse -Force .git
-
-# Initialize a new Git repository
-git init
-
-# Set the remote repository URL
-git remote add origin https://github.com/rohanreddy1201/video-obj-filter-detection-application.git
-
-# Create a .gitignore file
-Set-Content .gitignore ".vs/"
-Add-Content .gitignore "*.user"
-Add-Content .gitignore "*.suo"
-Add-Content .gitignore "*.cache"
-Add-Content .gitignore "*.log"
-
-# Create a README.md file
-Set-Content README.md "# Interactive Video Filter Application
+### Video Object Detection and Filter Application
 
 This project is an interactive video filter application with real-time object detection capabilities. Utilizing OpenCV for video processing and the YOLO (You Only Look Once) model for object detection, the application offers a user-friendly interface for applying various visual filters, detecting objects, and interacting with video feeds.
 
@@ -41,6 +21,9 @@ In the era of digital media, video content has become ubiquitous. Enhancing vide
 - **Real-Time Video Filtering**: Apply various visual filters in real-time, including Gaussian Blur, Median Filter, Bilateral Filter, Laplacian Edge Detection, and Color Space Conversions (RGB, HSV, LAB).
 - **Object Detection**: Utilize the YOLOv3 model for real-time object detection, highlighting and labeling detected objects.
 - **User-Friendly Interface**: Intuitive UI with buttons for selecting filters, a slider for adjusting filter intensity, and options for loading new videos and taking snapshots.
+
+## Additional Files:
+- **Files link (yolov3.weights and yolov3.cfg)** : https://www.kaggle.com/datasets/ravi02516/trained-weights-and-cfg
 
 ## Installation
 
